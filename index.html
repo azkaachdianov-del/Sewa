@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2d">
+  <title>Vilza VVIP Rental Transport - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash__glow"></div>
+    <div class="splash__content">
+      <div class="brand-mark">V</div>
+      <div class="splash__eyebrow">VILZA VVIP</div>
+      <h1>Rental Transport</h1>
+      <p>Akuntansi persediaan armada</p>
+      <div class="loader"><span></span></div>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand__mark">V</div>
+      <div>
+        <h1>Vilza VVIP</h1>
+        <p>Rental Transport</p>
+      </div>
+    </div>
+    <div class="sidebar__label">Menu utama</div>
+    <nav id="nav"></nav>
+    <div class="sidebar__footer">
+      <span class="status-dot"></span>
+      <span>Dashboard terhubung</span>
+    </div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">VILZA VVIP / <span id="crumb">Dashboard</span></div>
+        <h2 id="judul">Dashboard Armada</h2>
+      </div>
+      <div class="topbar__actions">
+        <button id="refreshBtn" class="icon-button" title="Muat ulang data" aria-label="Muat ulang data">↻</button>
+        <div class="avatar">V</div>
+      </div>
+    </header>
+    <section id="app" aria-live="polite"></section>
+  </main>
+
+  <script src="../backend/app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

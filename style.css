@@ -1,0 +1,28 @@
+:root { --tinta:#101b2d; --kuningan:#b08d3c; --latar:#f1f3f6; --garis:#d9dde4; --putih:#fff; }
+* { box-sizing: border-box; }
+body { margin:0; display:flex; min-height:100vh; font-family:'Manrope','Segoe UI',system-ui,sans-serif; background:var(--latar); color:var(--tinta); }
+aside { width:240px; background:var(--tinta); color:#e8e6df; padding:28px 20px; flex-shrink:0; }
+aside h1 { font-size:20px; line-height:1.25; margin:0 0 6px; color:var(--kuningan); }
+aside p { margin:0 0 28px; font-size:13px; opacity:.7; }
+nav button { display:block; width:100%; text-align:left; background:none; border:0; border-left:3px solid transparent; color:inherit; padding:10px 12px; font:inherit; cursor:pointer; }
+nav button:hover { background:#1b2a42; }
+nav button.aktif { border-left-color:var(--kuningan); background:#1b2a42; font-weight:700; }
+main { flex:1; padding:28px 32px; min-width:0; }
+h2 { margin:0 0 20px; font-size:24px; }
+.kartu { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-bottom:20px; }
+.kartu div { background:var(--putih); border:1px solid var(--garis); border-radius:6px; padding:14px 16px; }
+.kartu small { color:#5b6577; display:block; margin-bottom:6px; }
+.kartu b { font-size:18px; }
+form { background:var(--putih); border:1px solid var(--garis); border-radius:6px; padding:16px; margin-bottom:20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; align-items:end; }
+label { display:flex; flex-direction:column; gap:4px; font-size:13px; font-weight:600; }
+input, select { padding:8px; border:1px solid var(--garis); border-radius:4px; font:inherit; background:#fff; }
+button.utama { background:var(--kuningan); color:#fff; border:0; padding:10px 14px; border-radius:4px; font:inherit; font-weight:700; cursor:pointer; }
+button.kecil { border:1px solid var(--garis); background:#fff; padding:4px 8px; border-radius:4px; cursor:pointer; font:inherit; font-size:12px; }
+.tabel { overflow-x:auto; background:var(--putih); border:1px solid var(--garis); border-radius:6px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { padding:10px 12px; text-align:left; border-bottom:1px solid var(--garis); white-space:nowrap; }
+th { background:#f7f8fa; }
+tfoot td { font-weight:700; background:#f7f8fa; }
+.angka { text-align:right; }
+:focus-visible { outline:2px solid var(--kuningan); outline-offset:2px; }
+@media (max-width:760px) { body { flex-direction:column; } aside { width:auto; } nav { display:flex; flex-wrap:wrap; } nav button { width:auto; } main { padding:20px 14px; } }
